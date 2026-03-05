@@ -3,12 +3,12 @@ import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBZ7xYl9N9or1hwHYrjyMyYCVDS9euGsaM",
-  authDomain: "thynk-875.firebaseapp.com",
-  projectId: "thynk-875",
-  storageBucket: "thynk-875.firebasestorage.app",
-  messagingSenderId: "605085027412",
-  appId: "1:605085027412:web:7a85dd60889b3d7353b1c1"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
 
